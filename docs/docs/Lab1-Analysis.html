@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Megan Roe-Leon" />
+
+
+<title>Initial Survival Counts of Test Organisms Post-Glyphosate Exposure</title>
+
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">About</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li>
+  <a href="analyses.html">Analyses</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Initial Survival Counts of Test Organisms
+Post-Glyphosate Exposure</h1>
+<h4 class="author">Megan Roe-Leon</h4>
+
+</div>
+
+
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>Briefly describe your research question and why it matters.</p>
+<p>The purpose of this study is to explore the potential impact of
+glyphosate use on aquatic benthic macroinveretebrates. In this study, we
+utilize two test species <em>Daphnia magna</em> and <em>Hyalella
+azteca</em> for <em>in-situ</em> exposures. Using <em>in-situ</em>
+exposure chambers, we can consider environmentally realistic conditions
+while examining the potential impacts of glyphosate exposure, an
+advantage over traditional toxicity testing.</p>
+<div id="experiment-set-up" class="section level3">
+<h3>Experiment Set Up</h3>
+<p>At the Lake Orion Dog Park in Lake Orion, Michigan, there is a large
+lake named Lake Sixteen. Lake sixteen has a northern and a southern
+inlet. The northern inlet was utilized as a reference site, which did
+<strong>NOT</strong> receive glyphosate treatment. The southern inlet
+was utilized as the treated site, which <strong>DID</strong> receive
+glyphosate treatment.</p>
+<p>At each site, three mescososms were installed into the stream
+channel. Mesocosms were used in order to control for dissolved oxygen
+(DO), as they allowed for us to use aerators. Each mesocosm had 3
+<em>in-situ</em> exposure chambers with ten of each test species inside.
+This means that each mesocosm had 30 <em>D. magna</em> and 30 <em>H.
+azteca</em>. In total, there were 90 reference organisms, 90 treated
+organisms,30 lab controls, and 30 travel controls for each test
+species.</p>
+</div>
+<div id="endpoints" class="section level3">
+<h3>Endpoints</h3>
+<p>After a 48 hour exposure period, organisms were taken back to the lab
+for post-exposure monitoring. We measure survival for both species,
+reproduction in <em>D. magna</em>, and biomass in <em>H. azteca</em>. In
+this document, we will only look at initial field exposure survival
+data. This means that the data we are looking at here is the initial
+survival of the test groups upon retrieval of organisms from the stream.
+Survival was recorded again after the post-exposure monitoring culture
+period, but that data is not explored in this document.</p>
+<p>It is important to examine initial survival counts to see if there
+were immediate responses to field exposure. It is also important to know
+the survival of test organisms before they enter the post-exposure
+monitoring phase of the study, as some organisms may experience
+mortality during that time.</p>
+</div>
+</div>
+<div id="data-methods" class="section level1">
+<h1>Data &amp; methods</h1>
+<p>Describe your data source(s) and any cleaning steps.</p>
+<pre class="r"><code># load packages and data here
+library(ggplot2)
+library(sf)
+library(tidyverse)
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(readxl)
+library(binom)
+library(emmeans)
+library(car)
+
+field_sur &lt;-read_excel(&quot;Field Survival.xlsx&quot;, sheet = &quot;Run1&quot;)
+head(field_sur) </code></pre>
+<pre><code>## # A tibble: 6 × 8
+##   `Date:`             Treatment Replicate percent_survival Alive  Dead Total
+##   &lt;dttm&gt;              &lt;chr&gt;         &lt;dbl&gt;            &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 2025-07-24 00:00:00 Treat M1          1              1      10     0    10
+## 2 2025-07-24 00:00:00 Treat M1          2              1      10     0    10
+## 3 2025-07-24 00:00:00 Treat M1          3              1      10     0    10
+## 4 2025-07-24 00:00:00 Treat M2          1              1      10     0    10
+## 5 2025-07-24 00:00:00 Treat M2          2              0.8     8     2    10
+## 6 2025-07-24 00:00:00 Treat M2          3              1      10     0    10
+## # ℹ 1 more variable: `Comments:` &lt;chr&gt;</code></pre>
+<pre class="r"><code>#column to classify into categories by treatment group
+field_sur$Category &lt;- ifelse(grepl(&quot;Ref&quot;, field_sur$Treatment), &quot;Ref&quot;,
+ifelse(grepl(&quot;Treat&quot;, field_sur$Treatment), &quot;Treat&quot;, NA))
+
+
+#setting up proportions and total surivival because we will need to use Wilson 
+#for CIs because our sample size is so small. N3 for 3 replicate groups. 
+
+field_sur &lt;- field_sur %&gt;%
+  mutate(
+    Survivors = percent_survival * 10,
+    Total = 10
+  )
+
+summary_fsurv &lt;- field_sur %&gt;%
+  group_by(Treatment) %&gt;%
+  summarise(
+    total_survivors = sum(Survivors),
+    total_individuals = sum(Total),
+    mean_survival = mean(percent_survival) #not actually % but proportion. 
+  ) %&gt;%
+  rowwise() %&gt;%
+  mutate(
+    ci = list(prop.test(total_survivors, total_individuals)$conf.int),
+    ci_lower = ci[[1]],
+    ci_upper = ci[[2]]
+  ) %&gt;%
+  ungroup()</code></pre>
+</div>
+<div id="analysis" class="section level1">
+<h1>Analysis</h1>
+<pre class="r"><code># analysis code, plots, tables
+# Plot daphnia field survival
+ggplot(summary_fsurv, aes(x = Treatment, y = mean_survival, fill = Treatment)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2) +
+  ylim(0, 1)  +
+  theme_minimal() +
+  labs(title = &quot;Average D. magna Field Survival Proportion by Group&quot;,
+       x = &quot;Group&quot;,
+       y = &quot;Average Proportion Survived&quot;) +
+  scale_fill_manual(values = c(
+    &quot;Ref M1&quot; = &quot;#ff7f00&quot;,
+    &quot;Ref M2&quot; = &quot;#ff7f00&quot;,
+    &quot;Ref M3&quot; = &quot;#ff7f00&quot;,
+    &quot;Treat M1&quot; = &quot;#e31a1c&quot;,
+    &quot;Treat M2&quot; = &quot;#e31a1c&quot;,
+    &quot;Treat M3&quot; = &quot;#e31a1c&quot;
+  )) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))</code></pre>
+<p><img src="Lab1-Analysis_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="data-methods-1" class="section level1">
+<h1>Data &amp; methods</h1>
+<p>Describe your data source(s) and any cleaning steps.</p>
+<pre class="r"><code># load packages and data here
+library(ggplot2)
+library(sf)
+library(tidyverse)
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(readxl)
+library(binom)
+library(emmeans)
+library(car)
+
+#Hyalella azteca Survival Graph
+#Similar to before, we will clean our initial survival data for H. azteca 
+
+field_sur_hya &lt;-read_excel(&quot;Field Survival.xlsx&quot;, sheet = &quot;Run1_Hya&quot;)
+head(field_sur_hya) </code></pre>
+<pre><code>## # A tibble: 6 × 8
+##   `Date:`             Treatment Replicate percent_survival Alive  Dead Total
+##   &lt;dttm&gt;              &lt;chr&gt;         &lt;dbl&gt;            &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 2025-07-24 00:00:00 Ref M1            1              0.6     6     4    10
+## 2 2025-07-24 00:00:00 Ref M1            2              0.7     7     3    10
+## 3 2025-07-24 00:00:00 Ref M1            3              0.9     9     2    10
+## 4 2025-07-24 00:00:00 Ref M2            1              1      10     0    10
+## 5 2025-07-24 00:00:00 Ref M2            2              0.8     8     2    10
+## 6 2025-07-24 00:00:00 Ref M2            3              0.8     8     2    10
+## # ℹ 1 more variable: `Comments:` &lt;lgl&gt;</code></pre>
+<pre class="r"><code>#column to classify into categories
+field_sur_hya$Category &lt;- ifelse(grepl(&quot;Ref&quot;, field_sur_hya$Treatment), &quot;Ref&quot;,
+                             ifelse(grepl(&quot;Treat&quot;, field_sur_hya$Treatment), &quot;Treat&quot;, NA))
+
+
+#setting up proportions and total surivival because we will need to use Wilson 
+#for CIs because our sample size is so small. N3 for 3 replicate groups. 
+
+field_sur_hya &lt;- field_sur_hya %&gt;%
+  mutate(
+    Survivors = percent_survival * 10,
+    Total = 10
+  )
+
+summary_fsurv_hya &lt;- field_sur_hya %&gt;%
+  group_by(Treatment) %&gt;%
+  summarise(
+    total_survivors = sum(Survivors),
+    total_individuals = sum(Total),
+    mean_survival = mean(percent_survival) #not actually % but proportion. 
+  ) %&gt;%
+  rowwise() %&gt;%
+  mutate(
+    ci = list(prop.test(total_survivors, total_individuals)$conf.int),
+    ci_lower = ci[[1]],
+    ci_upper = ci[[2]]
+  ) %&gt;%
+  ungroup()</code></pre>
+</div>
+<div id="analysis-1" class="section level1">
+<h1>Analysis</h1>
+<pre class="r"><code># analysis code, plots, tables
+
+ggplot(summary_fsurv_hya, aes(x = Treatment, y = mean_survival, fill = Treatment)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2) +
+  ylim(0, 1)  +
+  theme_minimal() +
+  labs(title = &quot;Average H. azteca Field Survival Proportion by Group&quot;,
+       x = &quot;Group&quot;,
+       y = &quot;Average Proportion Survived&quot;) +
+  scale_fill_manual(values = c(
+    &quot;Ref M1&quot; = &quot;#ff7f00&quot;,
+    &quot;Ref M2&quot; = &quot;#ff7f00&quot;,
+    &quot;Ref M3&quot; = &quot;#ff7f00&quot;,
+    &quot;Treat M1&quot; = &quot;#e31a1c&quot;,
+    &quot;Treat M2&quot; = &quot;#e31a1c&quot;,
+    &quot;Treat M3&quot; = &quot;#e31a1c&quot;
+  )) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))</code></pre>
+<p><img src="Lab1-Analysis_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>Summarize key findings in plain language. Include figures/tables
+above.</p>
+<p>By looking at the <em>D. magna</em> surivial graph, there is
+seemingly no major differences in initial survival between the reference
+<em>D. magna</em> and the treatment <em>D. magna</em>. However, when we
+look at the <em>H. azteca</em> survival graph, we see that there may be
+some slight difference in initial survival between reference <em>H.
+azteca</em> and Treatment <em>H. azteca</em>. Further analysis and
+investigation is needed here, though.</p>
+</div>
+<div id="reflection" class="section level1">
+<h1>Reflection</h1>
+<p>Limitations, follow-ups, and what you’d do next. My next steps are to
+look at final survival numbers, with all test groups (Lab and Travel
+Controls) for both species. During the post-exposure monitoring period,
+we did see some die offs that need to be explored, using the Controls
+for reference. Survival is our least sensitive endpoint, in a way,
+because we can’t tease out finer, sublethal changes. However, this is
+why we also investigate reproduction in <em>D. magna</em> and biomass in
+<em>H. azteca</em>. I plan to run some simple ANOVAs to tease out
+significant difference between all treatment groups, especially with
+Daphnia reproduction.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

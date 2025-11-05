@@ -1,0 +1,43 @@
+---
+title: "Assignment 1: Coding Showcase"
+author: "Meg Roe-Leon"
+output: html_document
+---
+
+```{r setup_assignment, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+# Overview
+This is a short analysis demonstrating basic skills: plotting and fitting a simple model.
+
+# Data & methods
+We use the built-in `mpg` dataset from **ggplot2**.
+
+```{r}
+library(ggplot2)
+summary(mpg)
+```
+
+# Visualization
+```{r}
+p <- ggplot(mpg, aes(displ, hwy, color = class)) +
+  geom_point(alpha = 0.7) +
+  geom_smooth(method = "loess", se = FALSE)
+p
+```
+
+# Small analysis
+```{r}
+m <- lm(hwy ~ displ + cyl, data = mpg)
+summary(m)
+```
+
+# Reflection
+Write 3–5 sentences on what you learned and any caveats.
+
+In this example, we see a simple linear model (lm) that explores the relationship between gas mileage and the engine size and the number of cylinders the engine has. The output of the model shows all significant relationships (all p-values are below 0.05). This tells us that both the number of cylinders and displacement (size of engine?) has a significant negative relationship with mile per gallon for vehicles.
+
+I don't get the opportunity to do many linear models due to the nature of the data in my own research, so here, I learned how linear models can be useful when you have a few variables that you want to test against one another. It also allows you to control partially for other variables. 
+
+

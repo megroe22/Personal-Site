@@ -1,0 +1,14 @@
+---
+title: "Contact"
+output: html_document
+---
+
+```{r setup_contact, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Get in touch
+
+- **Email:** Megroe@umich.edu  
+- **GitHub:** https://github.com/megroe22  
+- **LinkedIn:** https://www.linkedin.com/in/megan-roe-964474203/
